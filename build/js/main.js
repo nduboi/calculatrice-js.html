@@ -83,8 +83,9 @@ function zero() {
 }
 function equal(){
     var affichage = document.getElementById('affichage');
+    console.log("adition", nombre);
+    console.log("resultat", calcule);
     affichage.innerHTML = nombre + " = " + calcule;
-
 }
 
 function reset(){

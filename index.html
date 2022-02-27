@@ -6,23 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="build/js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="build/css/main.css">
     <title>Caluclatrice</title>
 </head>
-<body>
-    <h1>Additions</h1>
-    <p id="affichage"></p>
-    <button id="one" onclick="one()">1</button>
-    <button id="two" onclick="two()">2</button>
-    <button id="three" onclick="three()">3</button>
-    <button id="four" onclick="four()">4</button>
-    <button id="five" onclick="five()">5</button>
-    <button id=six" onclick="six()">6</button>
-    <button id="seven" onclick="seven()">7</button>
-    <button id="eight" onclick="eight()">8</button>
-    <button id="nine" onclick="nine()">9</button>
-    <button id="zero" onclick="zero()">0</button>
-    <button id="equal" onclick="equal()">=</button>
-    <button id="reset" onclick="reset()">Reset</button>
+<body class="bg-gray-100">
+    <main class="flex">
+        <section class="container p-8 grid lg:grid-rows-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+            <div class="m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5">Additions</div> 
+            <div class="m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5 row-start-4"><p id="affichage"></p></div>
+            <button id="one" onclick="one()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">1</div></button>
+            <button id="two" onclick="two()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">2</div></button>
+            <button id="three" onclick="three()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">3</div></button>
+            <button id="four" onclick="four()" class="m-6 shadow-md rounded-lg overflow-hidden bg-white col-start-2 hover:shadow-xl"><div class="m-6 ">4</div></button>
+            <button id="five" onclick="five()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl ">5</div></button>
+            <button id="six" onclick="six()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">6</div></button>
+            <button id="seven" onclick="seven()" class="col-start-2 m-6 shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl "><div class="m-6">7</div></button>
+            <button id="eight" onclick="eight()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">8</div></button>
+            <button id="nine" onclick="nine()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">9</div></button>
+            <button id="equal" onclick="equal()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">=</div></button>
+            <button id="zero" onclick="zero()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">0</div></button>
+            <button id="reset" onclick="reset()"><div class="m-6 shadow-md rounded-lg overflow-hidden bg-white p-5 hover:shadow-xl">Reset</div></button>
+        </section>
+    </main>
+    
 </body>
 </html>
