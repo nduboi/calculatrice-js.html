@@ -86,3 +86,12 @@ function equal(){
     affichage.innerHTML = nombre + " = " + calcule;
 
 }
+
+function reset(){
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = "";
+    nombre =  0;
+    calcule = 0;
+    console.log("nombre", nombre);
+    console.log("calcule", calcule);
+}
